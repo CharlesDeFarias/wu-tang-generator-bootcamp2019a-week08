@@ -1,0 +1,42 @@
+body{
+    background: black;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+     url("https://i.pinimg.com/originals/c2/93/19/c29319ad6b39b60d03ed549e543eda5e.png");
+    background-size: cover;
+    font-weight: bold;
+    font-size: 1rem;
+}
+h1, h2{
+    text-align: center;
+}
+span{
+    color: yellow;
+}
+h2{
+    color: yellow;
+}
+p{
+    font-size: 1rem;
+}
+section{
+    width: 50%;
+}
+/* Not My Code for button */
+button {
+    position:relative;
+    width:7rem;
+    color:yellow;
+    border:2px solid yellow;
+    background-color:transparent;
+    line-height:2;
+    margin:0;
+    margin-top: 10px;
+    padding:0;
+    border-radius:1.5rem;
+}

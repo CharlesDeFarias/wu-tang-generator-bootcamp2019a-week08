@@ -1,37 +1,16 @@
 //5 Questions true or false & yes or no
 //Wu Tang name based on the answer
-//Write a loop that itterates through 5 questions
-//loop checks how many true or false there are
-//depending on the numbers of trues loops will output a name
-//radio buttons
-t = true;
-f = false;
-
+//Make name dependant on how many truths chosen
 //want to run function on click of submit button
-document.querySelector("button").addEventListnener('click', nameRandomizer)
-
-//Looks at the user's inputs
-//Function that loops through the number of trues from the input from the user
-//returns a name depending on the number of trues.
-function nameRandomizer(t){
-    let name = '';
-    if(t = 0){
-        return 'Method Man'
-    }else if(t = 1){
-        return 'RZA'
-    }else if(t = 2){
-        return 'Ol Dirty Bastard'
-    }else if(t = 3){
-        return 'Ghostface Killah'
-    }else if(t = 4){
-        return 'Raekwon'
-    }else{
-        return 'GZA'
+document.querySelector("button").addEventListener('click', nameGen)
+//Instead of running loop, can just create an array of names and have the number of truths be the index number
+function nameGen(){
+let t = document.querySelectorAll('#True:checked').length,
+f=document.querySelectorAll('#True:checked').length,
+names = ['Math.Method','Arr Cee','Ol Dry Code','Thundery','Monal Sunset', 'Genus Mustela Chromatic']
+name = names[t];
+    document.querySelector('h2').textContent = `'Your name is ${name} and you officially ain't nothing to fuck with`;
+    if(f+t<5){
+      document.querySelector('h2').textContent = 'You need to answer every question to find out your name! Stop being lazy.'
     }
-    document.querySelector('h1').textContent =
-    }
-
-    document.querySelectorAll()
 }
-
-//Values are 
